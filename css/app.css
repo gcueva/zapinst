@@ -404,6 +404,8 @@ nav.orbit-bullets
 .nav .button.button-2
 {
 	margin: 0px; 
+	max-width: 100%;
+	width: auto;
 }
 
 .button.button-4
@@ -419,7 +421,7 @@ nav.orbit-bullets
 	font-weight: bold;
 }
 
-.button.button-4:hover, .button.button-4:focus
+.button.button-4:hover, .button.button-4:focus, .button.button-4:visited,.button.button-4:active
 {
 	background: white;
 	color: black;
@@ -437,6 +439,18 @@ nav.orbit-bullets
 .activar-nav
 {
 	display: block;
+}
+
+.gender, .sizes, .category, .brand
+{
+	padding: 20px 0px;
+}
+
+.title-4
+{
+	font-size: 29px;
+    padding: 15px 0px;
+    border-bottom: 1px solid white;
 }
 
 .button.button-3
@@ -477,8 +491,16 @@ nav.orbit-bullets
 .nav input[type='checkbox']
 {
 	margin: 0px 2px 0px 0px;
-	width: 10px !important;
-	height: 10px;
+	width: 13px !important;
+	height: 13px;
+}
+
+.nav .sizes .button.button-3
+{
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /*nav*/
 
@@ -821,6 +843,18 @@ nav.orbit-bullets
 	}
 	/*header*/
 
+
+	/*nav*/
+	.title-4
+	{
+		font-size: 27px;
+	}
+
+	.button.button-4
+	{
+		font-size: 12px;
+	}
+	/*nav*/
 	/*section*/
 	.title
 	{
@@ -951,6 +985,13 @@ nav.orbit-bullets
 	/*search*/
 
 	/*header*/ 
+	/*nav*/
+	.title-4
+	{
+		font-size: 25px;
+	}
+
+	/*nav*/
 
 	/*section*/
 	.title
@@ -1058,6 +1099,19 @@ nav.orbit-bullets
 		max-width: 27px; 
 	}
 	/*header*/
+
+	/*nav*/
+	.title-4
+	{
+		font-size: 23px;
+	}
+
+	.button.button-4
+	{
+		font-size: 11px;
+	}
+
+	/*nav*/
 
 	/*login*/
 	.sub-title-4
