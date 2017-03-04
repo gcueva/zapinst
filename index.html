@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--Titulo e Icono-->
+<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+<title>ZapInst</title>
+<!--Estilos CSS-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style type="text/css">
+	@charset "utf-8";html{margin:0;padding:0}body{margin:0;padding:0;font-family:'Lato',sans-serif}.contenido{width:1000px;margin:auto;padding:10px 0}.header{border-bottom:2px solid}.logotipo{width:90px;height:90px;border-radius:50%;padding:0;margin:0;background:#fff}.logotipo img{width:100%;height:100%;margin:0}.header-left{display:flex;flex-wrap:nowrap;justify-content:space-between;align-items:center;color:#000;text-transform:uppercase;letter-spacing:1.2px}.header-left h1{margin:0;padding:0}.header-left h1 a{text-decoration:none;color:#000;font-size:13px;display:block}.buscador{height:25px;display:flex}.search-cuadro{width:250px;height:30px;padding:0 10px;margin:0;border-radius:3px;border:1px solid}.search-submit{width:25px;height:25px;font-size:0;padding:0;margin:0;background:url(../imagenes/search.png);background-size:cover;border:none}.usuarios{list-style:none;display:flex;justify-content:space-around;align-items:center;text-transform:uppercase;font-weight:600;margin:0;padding:0}.usuarios li{font-size:12px;margin-left:10px;text-align:center}.usuarios a{text-decoration:none;color:#000}.redes{display:flex;justify-content:flex-end;list-style:none;margin:0;padding:0}.redes li img{width:30px;padding-left:10px}#logo-search,#buscar,#quitar{display:none}.contenedor-login{text-align:center;width:auto;height:100%;z-index:2;position:fixed;top:-200%;left:0;right:0;background:rgba(194,194,194,0.7);padding:15px}.login{border:1px solid gray;border-radius:5px;background-color:#fff;opacity:1;padding:30px 45px;width:450px;margin:50px auto}.close-login{width:100%;display:block;text-align:right}.login h1{border-top:1px solid lightgray;padding:30px 0 20px;text-transform:uppercase;font-size:14px;letter-spacing:3px}.login label,.login input{display:block;text-align:left}.login label{font-size:14px;letter-spacing:1px;margin-bottom:5px}.email,.password{width:auto}.login input{width:92%;max-width:500px;height:35px;border-radius:2px;border:1px solid gray;margin-bottom:30px;padding:0 10px}.button{width:200px;height:50px;background:#000;color:#fff;font-family:'Lato',sans-serif;text-transform:uppercase;font-size:11px;font-weight:700;letter-spacing:2px;border:none;margin-top:20px;margin-bottom:25px}.login h3{font-size:12px;font-weight:100;text-decoration:underline}#quit-unete{display:none}.conteiner-banner{margin:0;position:relative;border-bottom:2px solid #000;background:rgba(0,0,0,0.20)}.banner{width:1000px;margin:auto;padding:0}.list-banner{width:1000px;list-style:none;display:flex;justify-content:center;align-items:center;margin:0;padding:0}.banner1{max-width:1000px;width:100%;height:245px;background-image:url(../imagenes/../imagenes/adidas-banner.jpg);background-repeat:no-repeat;background-size:cover;background-position:center}.controles{position:absolute;top:0;right:0;left:0;width:1000px;margin:auto;display:flex;justify-content:space-between}.previous,.next{height:245px;width:50px;display:flex;justify-content:center;align-items:center;background:rgba(0,0,0,0.60);color:#fff;font-size:30px;margin:0;padding:0}.contenedor-description{width:1000px;margin:20px auto;text-align:center;border:1px solid #000;border-radius:5px}.title-description{display:flex;justify-content:center;align-items:center;padding:0;margin:30px 10px 10px;border-bottom:.5px solid lightgray}.logotipo-title-description{width:70px;height:70px;border-radius:50%;padding:0;margin:0;background:#fff}.logotipo-title-description img{width:100%;height:100%}.title-description h1{text-transform:uppercase;margin-left:15px;font-size:25px;letter-spacing:2.5px}.contenedor-description h2{font-size:16px;margin:0 10px;padding-bottom:10px;border-bottom:.5px solid lightgray}.contenedor-description p{font-size:14px;margin:10px;padding:10px 0 20px;border-bottom:.5px solid lightgray}.contenedor-description p span{text-transform:uppercase;font-weight:700;letter-spacing:1px;color:#3DD7D5}@media screen and (max-width:1040px){.contenido{width:auto;padding:10px}.banner,.controles{width:auto;padding:0 10px}.list-banner{width:auto}.contenedor-description{width:auto;margin:20px 10px}.logotipo-title-description{width:60px;height:60px}.title-description h1{font-size:23px}.contenedor-description h2{font-size:15px}.contenedor-description p{font-size:13px}}@media screen and (max-width:850px){.logotipo-title-description{width:55px;height:55px}.title-description h1{font-size:22px}.contenedor-description h2{font-size:14px}.contenedor-description p{font-size:12px}}@media screen and (max-width:650px){.logotipo,.logotipo img{width:70px;height:70px}.header-left h1 a,.header-left h2{font-size:12px;padding:0;margin:0}.usuarios li{font-size:12px}.redes{margin-top:20px}.redes li img{width:27.5px}#logo-search,#buscar,#quitar{display:inherit}.search{width:auto;display:flex;justify-content:space-around;padding:10px;align-items:center;position:absolute;right:0;left:0;top:-100%;z-index:2;background:#fff}.search-cuadro{width:190px;height:30px;padding:0 10px;margin:0;border-radius:3px;border:1px solid}.search-submit{width:25px;height:25px;font-size:0;padding:0;margin:0;background:url(../imagenes/search.png);background-size:cover;border:none}.login{width:auto}span.close-login{position:relative;padding-bottom:20px}img#quit-unete{display:block;position:absolute;right:0}.title-description h1{font-size:21px}.contenedor-description h2{font-size:13px}.contenedor-description p{font-size:11.5px}}@media screen and (max-width:500px){.header-left h1 a,.usuarios li,.header-left h2{font-size:11px;margin:0 3px}.logotipo,.logotipo img{width:60px;height:60px}.redes li img{width:25px}}@media screen and (max-width:370px){.header-left h1 a,.usuarios li,.header-left h2{font-size:10px;margin:0 3px}.logotipo,.logotipo img{width:50px;height:50px}.redes li img{width:22px}.title-description h1{font-size:20px}.contenedor-description h2{font-size:12px}.contenedor-description p{font-size:11px}}
+</style>
+
+</head>
+ <body>
+	<!--Logo,busqueda, login-->
+	<header class="header">
+		<div class="contenido">
+			<div class="header-left">     
+				<figure class="logotipo">
+					<a href="index.html"><img src="imagenes/favicon.jpg" class="logotipo-img" alt="logo-zapinst"/></a>
+				</figure>
+				<h1><a href="index.html">ZapInst</a></h1>
+				<h2 id="buscar">Buscar</h2>
+				<div class="search" id="search">
+					<figure class="logotipo" id="logo-search">
+					<a href="index.html"><img src="imagenes/favicon.jpg" class="logotipo-img" alt="logo-zapinst"/></a>
+					</figure>
+					<div class="buscador">
+					<input type="search" class="search-cuadro" placeholder="Buscar..."/>
+					<input type="submit" value="Buscar" class="search-submit" />
+					</div>
+					<h2 id="quitar">Cancelar</h2>
+				</div>
+				<ol class="usuarios">
+					<li id="login">Iniciar Sesión</li>
+					<li id="users"><a href="index.html#contenedor-unete">Únete</a></li>
+				</ol>
+			</div>
+			<div class="header-right">
+				<ol class="redes">
+					<li><a><img src="assets/facebook-icon.png" alt="facebook"/></a></li>
+					<li><a><img src="assets/twit_logo.png" alt="twitter"/></a></li>
+					<li><a><img src="assets/SnapChat_Rounded_icon-icons.com_61574.png" alt="snapchat"/></a></li>
+					<li><a><img src="assets/Instagram-PNG-File.png" alt="instagram"/></a></li>
+					<li><a><img src="assets/Pinterest+Icon.png" alt="pinterest"/></a></li>
+				</ol>
+			</div>
+		</div>
+	</header>
+	<div class="conteiner-banner">
+		<div class="banner">
+			<ul class="list-banner">
+				<li class="banner1"></li>
+			<!--	<li><img src="imagenes/banner2.jpg" alt="Banner2"  height="245px"/></li>
+				<li><img src="imagenes/banner3.jpg" alt="Banner3" /></li>
+				<li><img src="imagenes/banner4.jpg" alt="Banner4" /></li>
+				<li><img src="imagenes/banner5.png" alt="Banner5" /></li>-->
+			</ul>
+		</div>
+		<div class="controles">
+			<a class="previous">&laquo;</a>
+			<a class="next">&raquo;</a>
+		</div>
+	</div>
+	<div id="contenedor-login" class="contenedor-login">
+		<div class="login">
+			<span class="close-login"><img src="imagenes/close.png" alt="close" width="20px" id="quit-login"/></span>
+			<h1>Bienvenido</h1>
+			<div class="email">
+			<label for="email">Correo electrónico o nombe de usuario</label>
+			<input type="email" required="asdasd@asdas.com" placeholder="Correo Electrónico" id="email" name="email"/>
+			</div>
+			<div class="password">
+			<label for="password">Contraseña</label>
+			<input type="password" placeholder="Contraseña" id="password" name="password"/>
+			</div>
+			<button class="button">Iniciar Sesión</button>
+			<h3>¿Olvidaste tu contraseña?</h3>
+		</div>
+	</div>
+	<div class="contenedor-description">
+		<div class="title-description">
+			<figure class="logotipo-title-description">
+				<img data-src="imagenes/favicon.jpg" class="logotipo-img" alt="logo-zapinst"/>
+			</figure>
+			<h1>Zapinst</h1>
+		</div>
+		<h2>Plataforma online especializada en en compra, venta por mayor y menor de zapatillas y artículos deportivos  de las marcas mas representativas del mercado mundial.</h2>
+		<p>En <span>ZAPINST</span> encontrarás los mejores precios en los diversos modelos de zapatillas de las marcas mas representativas del mercado internacional:<span> Nike, Adidas, Reebok, Puma,Air Jordan, Vans, Converse, DC</span> entre otras.<br/>
+		Los modelos mas variados para que se acomoden a tus necesidades:<span> running, fútbol, voley, basquetball, skateboard, o lo que necesites.</span> 
+		<br/>
+		Hacemos envíos a todo el Perú y ofrecemos <span> delivery GRATIS</span> en Lima Metropolitana.</p>
+		<div class="description-brand">
+			<h2>Principales Marcas</h2>
+			<div class="conteiner-brand">
+				<figure class="brand">
+					<img data-src="imagenes/brands/nike1.png" alt="Nike"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/nike2.png" alt="Nike-SB"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/adidas1.JPG" alt="Adidas"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/adidas2.png" alt="Adidas-Origin"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/adidas3.png" alt="Adidas-Performance"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/jordan.png" alt="Air-Jordan"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/puma.jpg" alt="Puma"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/reebok.png" alt="Reebok"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/umbro.png" alt="Umbro"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/vans.png" alt="Vans"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/dc.png" alt="DC"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/converse.png" alt="Converse"/>
+				</figure>
+				<figure class="brand">
+					<img data-src="imagenes/brands/reef.PNG" alt="Reef"/>
+				</figure>
+			</div>
+		</div>
+	</div>
+	<section id="contenedor-tutorials">
+		<div class="tutorials">
+			<h1>¿Cómo comprar?</h1>
+			<div class="tutorials-video">
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1y6smkh6c-0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="tutorials">
+			<h1>¿Cómo crear tu tienda virtual?</h1>
+			<div class="tutorials-video">
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/EOnSh3QlpbQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="tutorials">
+			<h1>¿Por qué ZapInst?</h1>
+			<div class="tutorials-video">
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/S1V4Gf12FmY" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+<!--<nav id="filters">
+		<div class="contenedor-filters">
+			<button class="button">Filtros</button>
+			<form class="contenedor-filters">
+				<div>
+					<input type="reset" value="limpiar filtros"/>
+				</div>
+				<h2>Filtros</h2>
+				<span class="icon-close"></span>
+				<div class="filters">
+					<div class="filter-gender">
+						<input class="button" type="button" value="Men"/>
+						<input class="button" type="button" value="Mujer"/>
+						<input type="button" class="button"  value="Niños"/>
+					</div>
+					<div class="filter-tallas">
+						<input type="button" value="2" />
+						<input type="button" value="2.5" />
+						<input type="button" value="3" />
+						<input type="button" value="3.5" />
+						<input type="button" value="4" />
+						<input type="button" value="4.5" />
+						<input type="button" value="5" />
+						<input type="button" value="5.5" />
+						<input type="button" value="6" />
+						<input type="button" value="6.5" />
+						<input type="button" value="7" />
+						<input type="button" value="7.5" />
+						<input type="button" value="8" />
+						<input type="button" value="8.5" />
+						<input type="button" value="9" />
+						<input type="button" value="9.5" />
+						<input type="button" value="10" />
+						<input type="button" value="10.5" />
+						<input type="button" value="11" />
+						<input type="button" value="11.5" />
+						<input type="button" value="12" />
+					</div>
+					<div class="filter-category">
+						<input type="url"/>
+						
+					</div>
+					<div class="filter-brand">
+					</div>
+					<div class="filter-color">
+						<h2>Color</h2>
+						<input type="checkbox" id="Color-black" name="Color-Black" value="white"/>
+						<input type="checkbox" id="Color-white" name="Color-white" value="white"/>
+						<input type="checkbox" id="color-blue" name="color-blue" value="blue" >
+						<input type="checkbox" id="color-red" name="color-red" value="red"/>
+						<input type="checkbox" id="color-gray" name="color-gray" value="gray"/>
+						<input type="checkbox" id="color-orange" name="color-orange" value="orange"/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</nav>-->
+	<section id="body-sneakers">
+		<div class="contenedor-sneakers">	
+			<h2 class="title">Comprar Ahora</h2>
+			<div class="body-sneakers">
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/jordan-retro-10.jpeg" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/air4.jpg" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/jordan-retro-12-gym-red.jpg" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/jordan-retro-12.jpg" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/jordan-retro-3.jpg" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/jordan-retro-4.jpg" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/jordan-retro-8.png" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+				<a href="1.html">
+				<div class="sneakers">
+					<figure>
+						<img data-src="imagenes/jordan-velvet-11.jpg" alt="air jordan"/>
+					</figure>
+					<div>
+						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
+						<h2 class="sneakers-price">$ 230</h2>
+						<h2 class="sneakers-tallas">7/7.5/8/8.5/9/<br/>9.5/10/10.5/11</h2>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="value-proposition">
+			<div class="proposition">
+				<span class="icon-home"></span>
+				<h1>Comodidad y Facilidad</h1>
+				<p>Compra online desde tu casa, oficina, móvil o donde te encuentres y paga de la manera que desees, con tarjeta crédito o débito, Paypal, transferencia bancaria, o al contado contra entrega</p>
+			</div>
+			<div class="proposition">
+				<span class="icon-truck"></span>
+				<h1>Delivery Gratis</h1>
+				<p>Envíos gratuitos a los diferentes centros comerciales de Lima Metropolitana y Callao, y las tarifas de envios a muy bajos precios al resto del Perú.</p>
+			</div>
+			<div class="proposition">
+				<span class="icon-clock"></span>
+				<h1>Entrega Rápida</h1>
+				<p>Nuestro servicio de delivery puede ser solo de horas dependiendo de donde quiera recogerlo.<br/>
+				Para mayores detalles revisa nuestro <a href="cronograma.html">cronograma de envíos.</a></p>
+			</div>
+			<div class="proposition">
+				<span class="icon-price"></span>
+				<h1>Los mejores Precios</h1>
+				<p>Tenemos los mejores precios los 365 días del año en zapinst.com ya sea la compra por mayor o menor</p>
+			</div>
+			<div class="proposition">
+				<span class="icon-price-seller"></span>
+				<h1>Vende a traves de ZapInst</h1>
+				<p>Crea tu tienda virtual y conectate con clientes a nivel nacional, por medio de ZapInst y todas las herramientas que te brinda, y vende por mayor y menor, se nuestro SOCIO.</p>
+			</div>
+	</section>
+	<div id="contenedor-unete" class="contenedor-unete">
+		<div class="unete">
+			<span class="close-login"><img data-src="imagenes/close.png" alt="close" width="20px" id="quit-unete"/></span>
+			<h2 class="title-unete">Únete</h2>
+			<h3>Escoge cómo quieres ser parte</h3>
+			<div class="users-cuadros">
+				<div class="user-buyer">
+					<a href="register-user-buyer.html"><figure>
+						<img data-src="imagenes/shopping-bag.png" alt="Cliente"/>
+					</figure></a>
+					<h2><a href="register-user-buyer.html">Cliente</a></h2>
+					<h3><a href="register-user-buyer.html">Busca los mejores modelos de las mejores marcas con sello de originalidad.</a></h3>
+					<a href="register-user-buyer.html"><button class="button">Registrarme</button></a>
+				</div>
+				<div class="user-wholesaler">
+					<a href="register-user-wholesaler.html"><figure>
+					<img data-src="imagenes/carro-de-la-compra.png" alt="Cliente Mayorista"/>
+					</figure></a>
+					<h2><a href="register-user-wholesaler.html">Cliente Mayorista</a></h2>
+					<h3><a href="register-user-wholesaler.html">Busca los mejores modelos de las mejores marcas y con los mejores precios para tus clientes.</a></h3>
+					<a href="register-user-wholesaler.html"><button class="button">Registrarme</button></a>
+				</div>
+				<div class="user-seller">
+					<a href="register-user-seller.html"><figure>
+					<img data-src="imagenes/tiendas-virtuales (1).png" alt="Socios"/>
+					</figure></a>
+					<h2><a href="register-user-seller.html">Socio</a></h2>
+					<h3><a href="register-user-buyer.html">Crea tu tienda virtual dentro plataforma, y relacionate con clientes a nivel nacional con las herramientas que necesitas.</a></h3>
+					<a href="register-user-buyer.html"><button class="button">Registrarme</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="conteiner-oferts">
+		<div class="oferts">
+			<h1>Liquidación, Ofertas y Descuentos de temporada.</h1>
+			<a href="oferst.html"><button class="button">Click Aquí</button></a>
+		</div>
+	</div>
+	<div class="conteiner-contact">
+		<div class="zapinst">
+			<h2>Zapinst</h2>
+			<ol>
+				<li><a href="zapinst.html">Acerca de ZAPINST</a></li>
+				<li><a href="proveedores.hmtl">Proveedores</a></li>
+				<li><a href="sociedad.hmtl">Socios</a></li>
+			</ol>
+		</div>
+		<div class="customer-support">
+			<h2>Atención al Cliente</h2>
+			<ol>
+				<li><a href="ayuda.html">Centro de ayuda</a></li>
+				<li><a href="experiencias.html">Experiencia de usuarios</a></li>
+				<li><a href="payment.html">Formas de Pago</a></li>
+				<li><a href="envio.hmtl">Confirmación y Envío</a></li>
+				<li><a href="changue.html">Cambios y Devoluciones</a></li>
+				<li><a href="password">Cambiar o Recuperar contraseña</a></li>
+			</ol>
+		</div>
+		<div class="contact">
+			<h2>Contáctanos</h2>
+			<ol>
+				<li><span class="icon-phone"></span>Telf. Fijo: 01 550-3471</li>
+				<li><span class="icon-mobile"></span>Telf. Móvil: 970780395 /                              984545737</li>
+				<li><span class="icon-whatsapp"></span>WhatsApp: 970780395</li>
+				<li><span class="icon-email"></span>Email: ventas@zapinst.com</li>
+			</ol>
+		</div>
+		<div class="social-media">
+			<h2>Síguenos</h2>
+			<ol class="social-redes">
+					<li><a><img data-src="imagenes/facebook-icon.png" alt="facebook"/></a></li>
+					<li><a><img data-src="imagenes/twit_logo.png" alt="twitter"/></a></li>
+					<li><a><img data-src="imagenes/SnapChat_Rounded_icon-icons.com_61574.png" alt="snapchat"/></a></li>
+					<li><a><img data-src="imagenes/Instagram-PNG-File.png" alt="instagram"/></a></li>
+					<li><a><img data-src="imagenes/Pinterest+Icon.png" alt="pinterest"/></a></li>
+				</ol>
+		</div>
+		
+	</div>
+	<footer id="footer">
+		<div class="footer">
+			<h2><a href="preg-frecu.html">Preguntas Frecuentes</a></h2>
+			<h2><a href="garan-aute.html">Garantía de Autenticidad</a></h2>
+			<h2><a href="devolucion.html">Devoluciones</a></h2>
+			<h2><a href="privacidad.html">Privacidad</a></h2>
+			<h2><a href="delivery.html">Delivery</a></h2>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+	<script>
+	WebFont.load({google: {families: ['Montserrat', 'Allerta','Droid+Sans','Fira+Sans+Condensed','Gloria+Hallelujah','Kaushan+Script','Lobster','Pacifico','Didact+Gothic','Lato','Marck+Script','Playball','Shadows+Into+Light+Two']}});
+	</script> 
+	<script>
+		var buscadorOn = document.getElementById("buscar");
+		var search = document.getElementById("search");
+		buscadorOn.addEventListener("mouseup",buscarActivar);
+		var buscadorOff = document.getElementById("quitar");
+		buscadorOff.addEventListener("mouseup",buscarQuit);
+									 
+		function buscarActivar()
+		{
+			search.classList.add('activar-search');
+		}
+		
+		function buscarQuit()
+		{
+			search.classList.remove('activar-search');
+		}	
+		
+		var loginOn = document.getElementById("login");
+		var login= document.getElementById("contenedor-login");
+		loginOn.addEventListener("mouseup",loginActivar);
+		var loginOff = document.getElementById("quit-login");
+		loginOff.addEventListener("mouseup",loginQuit);
+									 
+		function loginActivar()
+		{
+			login.classList.add('activar-login');
+		}
+		
+		function loginQuit()
+		{
+			login.classList.remove('activar-login');
+		}
+		
+		var userOn = document.getElementById("users");
+		var users= document.getElementById("contenedor-unete");
+		userOn.addEventListener("mouseup",userActivar);
+		var userOff = document.getElementById("quit-unete");
+		userOff.addEventListener("mouseup",userQuit);
+									 
+		function userActivar()
+		{
+			users.classList.add('activar-unete');
+		}
+		
+		function userQuit()
+		{
+			users.classList.remove('activar-unete');
+		}
+		//blazy
+		var bLazy = new Blazy({
+			selector: 'img'
+			// options
+		});
+		
+	</script>
+	<link href="css/zapinst.css" type="text/css" rel="stylesheet"/>
+	
+</body>
+</html>
